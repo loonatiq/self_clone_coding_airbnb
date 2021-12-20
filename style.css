@@ -2,8 +2,10 @@
   --white-color: #fcfcfc;
   --black-color: #131313;
   --gray-color: #817e7e;
+  --light-gray-color: #f7f7f7;
+  --line-color: #e2e2e2;
   --menu-padding: 10px 20px;
-  --mainpage-margin: 5% 5%;
+  --mainpage-margin: 5% 8%;
 }
 
 * {
@@ -16,13 +18,16 @@ ul {
   list-style: none;
 }
 
-.navbar {
+#navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
   background-color: var(--black-color);
   color: var(--white-color);
+  padding: 2% 8%;
+  position: sticky;
+  top: 0;
 }
 
 .navbar_logo {
@@ -35,17 +40,17 @@ ul {
 }
 
 .navbar_logo span {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   padding-left: 5px;
 }
 
-.navbar_center {
+#navbar_center {
   display: flex;
   padding: 0px 0px 0px 50px;
 }
 
-.navbar_center li {
+#navbar_center li {
   padding: var(--menu-padding);
 }
 
@@ -71,28 +76,79 @@ ul {
   color: var(--gray-color);
 }
 
+.searchMenu {
+  display: flex;
+  justify-content: center;
+  background-color: var(--black-color);
+  padding-bottom: 20px;
+}
+
+.searchMenu div {
+  display: flex;
+  align-items: center;
+  background-color: var(--white-color);
+  font-weight: bold;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding: 10px;
+}
+
+.searchMenu div ul {
+  background-color: var(--white-color);
+  padding: 5px;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-right: 70px;
+}
+
+.searchMenu .addline {
+  border-left: 1px solid var(--line-color);
+  padding-left: 20px;
+}
+
+.searchMenu div ul li {
+  font-weight: normal;
+  font-size: 13px;
+  color: var(--gray-color);
+}
+
+.searchMenu div i {
+  background-color: #f13f7a;
+  padding: 15px;
+  border-radius: 30px;
+  color: var(--white-color);
+}
+
 .mainpage_1 {
+  background-color: var(--black-color);
+  padding-bottom: 100px;
+}
+.mainpage_1_1 {
   color: var(--white-color);
   text-align: center;
   background-image: url(./img/main1.jpg);
-  background-color: var(--black-color);
+  border-radius: 10px;
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   padding-bottom: 100px;
+  margin: 0 8%;
 }
 
-.mainpage_1 p {
-  padding-top: 400px;
-  padding-bottom: 50px;
-  font-size: 50px;
+.mainpage_1_1 p {
+  padding-top: 550px;
+  padding-bottom: 30px;
+  font-size: 48px;
+  font-weight: bold;
 }
 
-.mainpage_1 span {
-  padding: 10px;
+.mainpage_1_1 span {
+  padding: 15px 30px;
   color: var(--black-color);
   background-color: var(--white-color);
-  border-radius: 20px;
+  border-radius: 30px;
   font-weight: bold;
 }
 
@@ -169,8 +225,9 @@ ul {
 .mainpage_3 p {
   position: relative;
   top: 30px;
-  font-size: 200%;
+  font-size: 300%;
   color: var(--white-color);
+  font-weight: bold;
 }
 
 .mainpage_3 ul li span {
@@ -179,8 +236,9 @@ ul {
   font-weight: bold;
   background-color: var(--white-color);
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
 }
+
 .try_1 {
   background-image: url(./img/try1.jpg);
   background-position: center center;
@@ -193,4 +251,73 @@ ul {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.mainpage_4 {
+  margin: var(--mainpage-margin);
+  padding: 0 0 120px 0;
+  background-image: url(./img/question.jpg);
+  background-position: center center;
+  background-size: 100%;
+  border-radius: 15px;
+}
+
+.mainpage_4 p {
+  padding: 5% 0 2% 6%;
+  font-size: 500%;
+  font-weight: bold;
+  margin-bottom: 10%;
+  color: var(--white-color);
+}
+
+.mainpage_4 span {
+  background-color: var(--white-color);
+  margin-left: 8%;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.bottomMenu {
+  background-color: var(--light-gray-color);
+}
+
+.bottomMenu1st {
+  display: flex;
+  padding: 50px 8%;
+}
+
+.bottomMenuTitle {
+  font-weight: bold;
+}
+
+.bottomMenu1st li {
+  padding: 10px;
+  font-size: 14px;
+  margin-right: 200px;
+}
+
+.bottomMenu2nd {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.5px solid var(--line-color);
+  margin: 0 8%;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.bottomMenu2nd ul li {
+  float: left;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.bottomRightMenu {
+  display: flex;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.bottomRightMenu i {
+  margin: 0 10px 0 20px;
 }
