@@ -11,28 +11,31 @@
 </head>
 <body>
   <nav id="navbar">
-    <div class="navbar_logo"><i class="fab fa-airbnb"></i><span>airbnb</span></div>
+    <div id="navbar_logo"><i class="fab fa-airbnb"></i><span>airbnb</span></div>
     <ul id="navbar_center">
       <li>숙소</li>
       <li>체험</li>
       <li>온라인 체험</li>
     </ul>
-    <ul class="navbar_right">
+    <div id="searchMini">
+      <div>검색 시작하기</div><i class="fas fa-search"></i>
+    </div>
+    <ul id="navbar_right">
       <li>호스트 되기</li>
       <li><i class="fas fa-globe"></i></li>
-      <ul class="navbar_menu">
+      <ul id="navbar_menu">
         <li><i class="fas fa-bars"></i></li>
         <li><i class="fas fa-user-circle fa-2x"></i></li>
       </ul>
     </ul>
   </nav>
 
-  <div class="searchMenu">
+  <div id="searchMenu">
     <div>
-    <ul>위치<li>어디로 여행가세요?</li></ul>
-    <ul class="addline">체크인<li>날짜 입력</li></ul>
-    <ul class="addline">체크아웃<li>날짜 입력</li></ul>
-    <ul class="addline">인원<li>게스트 추가</li></ul>
+    <ul>위치<li><input type="text" placeholder="어디로 여행가세요?"></li></ul>
+    <ul class="addline">체크인<li><input type="text" placeholder="날짜 입력"></li></ul>
+    <ul class="addline">체크아웃<li><input type="text" placeholder="날짜 입력"></li></ul>
+    <ul class="addline">인원<li><input type="text" placeholder="게스트 추가"></li></ul>
     <i class="fas fa-search"></i>
     </div>
   </div>
