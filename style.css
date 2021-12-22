@@ -30,6 +30,7 @@ ul {
   position: sticky;
   top: 0;
   transition: 0.2s;
+  z-index: 1;
 }
 
 #navbar_logo {
@@ -167,7 +168,7 @@ input:focus {
 
 .mainpage_1 {
   background-color: var(--black-color);
-  padding-bottom: 100px;
+  padding-bottom: 7%;
 }
 .mainpage_1_1 {
   color: var(--white-color);
@@ -182,8 +183,8 @@ input:focus {
 }
 
 .mainpage_1_1 p {
-  padding-top: 550px;
-  padding-bottom: 30px;
+  padding-top: 35%;
+  padding-bottom: 5%;
   font-size: 48px;
   font-weight: bold;
 }
@@ -268,7 +269,7 @@ input:focus {
 
 .mainpage_3 p {
   position: relative;
-  top: 30px;
+  top: 30%;
   font-size: 300%;
   color: var(--white-color);
   font-weight: bold;
@@ -276,7 +277,7 @@ input:focus {
 
 .mainpage_3 ul li span {
   position: relative;
-  top: 60px;
+  top: 55%;
   font-weight: bold;
   background-color: var(--white-color);
   border-radius: 5px;
@@ -304,6 +305,7 @@ input:focus {
   background-position: center center;
   background-size: 100%;
   border-radius: 15px;
+  background-repeat: no-repeat;
 }
 
 .mainpage_4 p {
@@ -364,4 +366,22 @@ input:focus {
 
 .bottomRightMenu i {
   margin: 0 10px 0 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  #navbar_logo {
+    display: none;
+  }
+
+  #navbar_center li {
+    display: none;
+  }
+
+  #navbar_right {
+    display: none;
+  }
+
+  #searchMenu {
+    display: none;
+  }
 }
