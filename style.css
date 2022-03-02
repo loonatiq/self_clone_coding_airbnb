@@ -285,14 +285,14 @@ input:focus {
 }
 
 .try_1 {
-  background-image: url(./img/try1.jpg);
+  background-image: url(./img/pexels-nicolas-2925146.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .try_2 {
-  background-image: url(./img/try2.jpg);
+  background-image: url(./img/pexels-tommy-milanese-7891883.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -301,7 +301,7 @@ input:focus {
 .mainpage_4 {
   margin: var(--mainpage-margin);
   padding: 0 0 120px 0;
-  background-image: url(./img/question.jpg);
+  background-image: url(./img/pexels-andrea-piacquadio-3768131.jpg);
   background-position: center center;
   background-size: 100%;
   border-radius: 15px;
